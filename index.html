@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mercedes-Benz Kampaniyasi — Eng yaxshisi yoki hech narsa</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0b0c0e;--surface:#15171a;--text:#f1f2f4;--muted:#9a9fa8;--line:#26292e;--teal:#00adef;--silver:#c9ced6;--amb:#2de2c4;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#f4f5f7;--surface:#fff;--text:#14171b;--muted:#5d646e;--line:#dadde2;--silver:#4a515b;--teal:#0079a8;--amb:#0aa88f}}
+:root[data-theme="dark"]{--bg:#0b0c0e;--surface:#15171a;--text:#f1f2f4;--muted:#9a9fa8;--line:#26292e}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Manrope,system-ui,sans-serif;font-size:17px;line-height:1.65}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;line-height:1.02;margin:0}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--teal);outline-offset:3px}
+header{display:flex;justify-content:space-between;align-items:center;padding:20px 5vw;position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);z-index:5;border-bottom:1px solid var(--line)}
+.logo{font-family:"Cormorant Garamond",serif;font-size:24px;font-weight:600;letter-spacing:.08em}
+nav{display:flex;gap:30px;color:var(--muted)}nav a:hover{color:var(--text)}
+.btn{display:inline-block;border:1px solid var(--silver);color:var(--text);background:none;padding:13px 30px;font:500 16px Manrope,sans-serif;cursor:pointer;transition:all .25s}
+.btn:hover{background:var(--text);color:var(--bg)}
+.hero{text-align:center;padding:11vw 5vw 8vw;position:relative;overflow:hidden}
+.hero h1{font-size:clamp(52px,9vw,128px);max-width:14ch;margin:0 auto}
+.hero p{color:var(--muted);max-width:50ch;margin:26px auto 34px}
+.amb{position:absolute;left:0;right:0;bottom:0;height:3px;background:linear-gradient(90deg,transparent,var(--amb),var(--teal),transparent);background-size:200% 100%;animation:glow 5s ease-in-out infinite alternate;box-shadow:0 0 40px 6px var(--amb);opacity:.85}
+@keyframes glow{from{background-position:0 0;opacity:.35}to{background-position:100% 0;opacity:.95}}
+section{padding:7vw 5vw;max-width:1250px;margin:auto}
+section h2{font-size:clamp(38px,5.5vw,70px);margin-bottom:12px}
+.lead{color:var(--muted);max-width:52ch;margin:0 0 40px}
+.list{border-top:1px solid var(--line)}
+.row{display:grid;grid-template-columns:1.2fr 2fr repeat(2,1fr);gap:20px;align-items:center;padding:26px 6px;border-bottom:1px solid var(--line);cursor:pointer;width:100%;background:none;color:inherit;text-align:left;border-left:0;border-right:0;border-top:0;font:inherit;transition:padding .3s,background .3s}
+.row:hover,.row[aria-expanded="true"]{background:var(--surface);padding-left:24px}
+.row h3{font-size:38px}
+.row span{color:var(--muted);font-size:15px}
+.row b{font-weight:600;color:var(--teal)}
+.detail{display:none;padding:22px 24px 30px;background:var(--surface);border-bottom:1px solid var(--line);color:var(--muted)}
+.detail.open{display:block}
+.perks{display:grid;grid-template-columns:repeat(3,1fr);gap:50px}
+.perks h3{font-size:34px;margin-bottom:10px}
+.perks p{color:var(--muted);margin:0}
+.perks div{border-top:1px solid var(--silver);padding-top:22px}
+.cta{text-align:center;background:var(--surface);max-width:none;border-top:1px solid var(--line)}
+.cta form{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:28px}
+.cta input{padding:14px 18px;border:1px solid var(--line);min-width:240px;background:var(--bg);color:var(--text);font:17px Manrope,sans-serif}
+#msg{margin-top:16px;min-height:1.5em;color:var(--amb)}
+footer{padding:30px 5vw;color:var(--muted);font-size:14px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+@media (max-width:820px){nav{display:none}.row{grid-template-columns:1fr 1fr}.row span:nth-child(2){grid-column:1/-1;order:3}.perks{grid-template-columns:1fr;gap:30px}}
+@media (prefers-reduced-motion:reduce){.amb{animation:none}}
+</style>
+</head>
+<body>
+<header>
+  <a class="logo" href="#top">MERCEDES-BENZ TOSHKENT</a>
+  <nav><a href="#modellar">Modellar</a><a href="#taklif">Takliflar</a><a href="#royxat">Test-drayv</a></nav>
+  <a class="btn" href="#royxat">Yozilish</a>
+</header>
+
+<main id="top">
+<div class="hero">
+  <h1>Eng yaxshisi yoki hech narsa.</h1>
+  <p>Hashamat, xavfsizlik va ilg‘or texnologiya. Yangi modellarga kampaniya narxlari 30 noyabrgacha amal qiladi.</p>
+  <a class="btn" href="#modellar">Modellarni ko‘rish</a>
+  <div class="amb"></div>
+</div>
+
+<section id="modellar">
+  <h2>Avlodlar mukammalligi</h2>
+  <p class="lead">Modelni bossangiz, batafsil ma’lumot ochiladi.</p>
+  <div class="list" id="list"></div>
+</section>
+
+<section id="taklif">
+  <h2>Kampaniya takliflari</h2>
+  <p class="lead">Faqat rasmiy diler orqali.</p>
+  <div class="perks">
+    <div><h3>Imtiyozli kredit</h3><p>Birinchi to‘lov 20% dan, ustama foiz yo‘q.</p></div>
+    <div><h3>Sovg‘a: servis paketi</h3><p>Dastlabki 3 yil texnik xizmat narxga kiritilgan.</p></div>
+    <div><h3>Shaxsiy menejer</h3><p>Tanlashdan ro‘yxatdan o‘tkazishgacha bir kishi hamroh bo‘ladi.</p></div>
+  </div>
+</section>
+
+<section class="cta" id="royxat">
+  <h2>Rul ortiga o‘ting.</h2>
+  <p class="lead" style="margin-inline:auto">Ismingiz va raqamingizni qoldiring, menejer siz bilan bog‘lanadi.</p>
+  <form onsubmit="return false">
+    <input id="nm" placeholder="Ismingiz" aria-label="Ismingiz">
+    <input id="ph" placeholder="+998 __ ___ __ __" aria-label="Telefon raqami" inputmode="tel">
+    <button class="btn" id="send" type="button">Test-drayvga yozilish</button>
+  </form>
+  <div id="msg" role="status"></div>
+</section>
+</main>
+
+<footer><span>© 2026 Mercedes-Benz Toshkent. Barcha huquqlar himoyalangan.Sayt asoschisi Juraev Abdulaziz.</span><span>Toshkent, O‘zbekiston</span></footer>
+
+<script>
+var M=[
+{n:"C-Class",t:"Biznes-sedanning ixcham va zamonaviy talqini: keng salon, aqlli yordamchi tizimlar.",p:"204 o.k.",s:"7,3 s",c:"$55 000"},
+{n:"E-Class",t:"Uzoq yo‘llarda ham charchatmaydigan qulaylik va sinfdagi eng keng salonlardan biri.",p:"258 o.k.",s:"6,2 s",c:"$72 000"},
+{n:"GLE",t:"Premium SUV: to‘liq yuritma, havo osmasi va yetti o‘rinli variant.",p:"367 o.k.",s:"5,7 s",c:"$98 000"},
+{n:"EQE",t:"To‘liq elektr biznes-klass. Jim salon va 600 km gacha yurish masofasi.",p:"292 o.k.",s:"6,4 s",c:"$89 000"}];
+var L=document.getElementById("list");
+M.forEach(function(m,i){
+var r=document.createElement("button");r.className="row";r.setAttribute("aria-expanded","false");
+r.innerHTML='<h3></h3><span class="d"></span><span>Quvvat: <b></b></span><span>Narxi: <b></b></span>';
+r.querySelector("h3").textContent=m.n;r.querySelector(".d").textContent="0–100 km/soat: "+m.s;
+var b=r.querySelectorAll("b");b[0].textContent=m.p;b[1].textContent=m.c+" dan";
+var d=document.createElement("div");d.className="detail";d.textContent=m.t;
+r.addEventListener("click",function(){var o=d.classList.toggle("open");r.setAttribute("aria-expanded",o)});
+L.appendChild(r);L.appendChild(d)});
+document.getElementById("send").addEventListener("click",function(){
+var n=document.getElementById("nm").value.trim(),p=document.getElementById("ph").value.trim(),m=document.getElementById("msg");
+if(!n||p.length<9){m.textContent="Ism va telefon raqamini to‘liq kiriting.";m.style.color="var(--muted)";return}
+m.style.color="var(--amb)";m.textContent="Rahmat, "+n+"! Menejer tez orada qo‘ng‘iroq qiladi."});
+</script>
+</body>
+</html>
